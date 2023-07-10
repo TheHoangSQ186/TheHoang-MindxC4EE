@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    background-color: #102a70;
+    color: white;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+#element1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 10px;
+    margin-bottom: 200px;
+}
+
+#profilepic {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: flex-end;
+
+}
+
+.left {
+    height: 600vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+#picbox {
+    height: 70px;
+    background-color: #103d70;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#search {
+    background-color: white;
+    color: black;
+    height: 30px;
+    margin-left: 10px;
+}
+
+#box {
+    height: 570px;
+    background-color: #5582fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#childbox {
+    border-radius: 10px;
+    width: 80vw;
+    height: 500px;
+    border: 3px dashed gray;
+}
