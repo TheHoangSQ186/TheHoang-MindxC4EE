@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <div id="loginBox">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <div id="errorBox" style="display: none;">
+        <p id="errorMessage">Dang Nhap That Bai</p>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").onsubmit = function(event) {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "abc" && password === "abc") {
+                window.location.href = "home.html";
+            } else {
+                document.getElementById("errorBox").style.display = "block";
+            }
+        };
+    </script>
+</body>
+</html>
