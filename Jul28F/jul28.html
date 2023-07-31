@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DENMMITPRKMOTSTATP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <script >
+        var myNumber = 10
+const oddEven = (number) => {
+    return number % 2 === 0 ? 'So le' : 'So Chan';
+  };
+console.log(oddEven(myNumber)); 
+
+// Số âm hay dương
+const positiveNegative = (number) => {
+    return number <0 ? 'So Am ' : 'So Duong';
+  };
+console.log(positiveNegative(myNumber)); 
+
+//Số nguyên tố
+const checkPrime = (number) => {
+    if (number <= 1) {
+      return "Khong phai so nguyen to";
+    }
+  
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+      if (number % i === 0) {
+        return "Khong phai so nguyen to"; 
+      }
+    }
+    return "So nguyen to"; 
+  };
+  console.log(checkPrime(myNumber)); 
+
+  //Số nguyên tố nhỏ hơn N
+  const isPrime = (number) => {
+  if (number <= 1) {
+    return false;
+  }
+
+ 
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false; 
+    }
+  }
+
+  return true; 
+};
+
+
+const printPrimesLessThan = (inputNumber) => {
+  if (inputNumber <= 2) {
+    console.log("There are no prime numbers less than 2.");
+    return;
+  }
+
+  for (let i = 2; i < inputNumber; i++) {
+    if (isPrime(i)) {
+      console.log(i);
+    }
+  }
+};
+
+
+printPrimesLessThan(20);
+
+// In ra màn hình các số lẻ từ 1 đến n 
+const printOddNumbers = (n) => {
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 !== 0) {
+      console.log(i);
+    }
+  }
+};
+
+printOddNumbers(myNumber);
+
+// // In ra màn hình các số chẵn từ 0 đến n
+const printEvenNumbers = (m) => {
+  for (let i = 1; i <= m; i++) {
+    if (i % 2 == 0) {
+      console.log(i);
+    }
+  }
+};
+printEvenNumbers(myNumber);
+
+//Bai 2
+const getDaysInMonth = (number) => {
+  switch (number) {
+    case 4: 
+    case 6: 
+    case 9: 
+    case 11: 
+      console.log(30);
+      break;
+    case 2: 
+      console.log("28 hoac 29 ngay")
+      break;
+    default: 
+      console.log(31);
+  }
+};
+getDaysInMonth(2);
+getDaysInMonth(8);
+getDaysInMonth(12);
+
+    </script>
+
+// Bai 3
+<script src="main.js" type="module"></script>
+
+</body>
+
+</html>
