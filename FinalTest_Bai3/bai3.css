@@ -1,0 +1,99 @@
+body {
+    background-color: #1d233b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+
+
+#menu {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        height: 100%;
+        background-color: #1d233b;
+        border-radius: 5px;
+        border: 1px solid white;
+}
+
+.sign-in-btn {
+    width: 95%;
+    height: 100%;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #C367E6, #1d233b);
+    color: #fff;
+    border: none;
+    padding: 2px #1D233B;
+    cursor: pointer;
+  }
+  
+ 
+  .discover {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #C367E6, #1d233b);
+    color: #fff;
+    border: none;
+    padding: 1px #1D233B;
+    cursor: pointer;
+  }
+
+  .statistics {
+    display: flex;
+    align-self:last baseline;
+  }
+
+  .childbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+  }
+
+  .monkey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.counting{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #545C71;
+  font-size: 15px;
+}
+
+.number{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sponsor {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+.sponsor img {
+  width: 100px;
+  height: 50px;
+}
